@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>AMBots | C3D Simulator</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+
+        #previousButton {
+            position: absolute;
+            width: 80px;
+            height: 36px;
+            background: #2c54ac;
+            color: white;
+            bottom: 20px;
+            right: 25%;
+            left: 50%;
+            margin-left: -155px;
+        }
+
+        #playButton {
+            position: absolute;
+            width: 150px;
+            height: 36px;
+            background: #1a913e;
+            color: white;
+            bottom: 20px;
+            right: 25%;
+            left: 50%;
+            margin-left: -75px;
+        }
+
+        #nextButton {
+            position: absolute;
+            width: 80px;
+            height: 36px;
+            background: #2c54ac;
+            color: white;
+            bottom: 20px;
+            right: 25%;
+            left: 50%;
+            margin-left: 75px;
+        }
+
+        #infoText {
+            position: absolute;
+            width: 400px;
+            height: 36px;
+            color: white;
+            top: 20px;
+            right: 25%;
+            left: 50%;
+            margin-left: -200px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #frameCounter {
+            position: absolute;
+            width: 200px;
+            height: 36px;
+            color: white;
+            bottom: 56px;
+            right: 25%;
+            left: 50%;
+            margin-left: -100px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <button id="previousButton" class="previousButton">Previous</button>
+    <button id="playButton" class="playButton">Play Simulation</button>
+    <button id="nextButton" class="nextButton">Next</button>
+    <label id="frameCounter" class="frameCounter">0 | 0</label>
+    <label id="infoText" class="infoText">Loading OBJ files...</label>
+</body>
+
+</html>
